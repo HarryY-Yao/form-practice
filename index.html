@@ -10,17 +10,23 @@
     <div class="background-left">
         <img src="form.jpg" alt="leaves">
         <div class="img-container">
-            <img src="odin-lined.png" alt="odin logo">
+            <img class="logo" src="odin-lined.png" alt="odin logo">
+            <div class="logo-text">ODIN</div>
         </div>
     </div>
     <div class="form-component">
-    <p class="blurb">
-        This is not a real online service! You know you need something like this in your life to help you realize
-        your deepest dreams. Sign up <em>now</em> to get started.
-    </p>
-    <p class="blurb">
-        You <em>know</em> you want to.
-    </p>
+        <div class="blurb">
+            <p>
+            <h2>This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                Sign up <em>now</em> to get started.</h2>
+            </p>
+        </div>
+    <div class="blurb">
+        <p>
+            <h2>You <em>know</em> you want to.</h2>
+        </p>
+    </div>
     <form action="#" method="get">
         <fieldset class="info-container">    
             <h2>Let's do this!</h2>
@@ -52,12 +58,12 @@
                 <div class="form-row">
                     <div class="form-field">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" minlength="8" required>
                     </div>
 
                     <div class="form-field">
                         <label for="cfm-password">CONFIRM PASSWORD</label>
-                        <input type="password" name="cfm-password" id="cfm-password">
+                        <input type="password" name="cfm-password" id="cfm-password" minlength="8" required>
                     </div>
                 </div>
             </div>
